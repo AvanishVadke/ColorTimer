@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color changing app by Avanish</title>
+  </head>
+  <body>
+    <h1>App changes color in every 3 seconds</h1>
+    <script>
+      function colorChange() {
+        const colors = [
+          "red",
+          "blue",
+          "yellow",
+          "purple",
+          "lightblue",
+          "cyan",
+          "lightblue",
+        ];
+        let r = parseInt(Math.random() * colors.length);
+        document.body.style.backgroundColor = colors[r];
+      }
+      colorChange();
+      setInterval(colorChange, 3000);
+    </script>
+  </body>
+</html>
